@@ -10,8 +10,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        val myList = listOf<Item>()
 
-        recycler.adapter = Adapter()
-        recycler.layoutManager = LinearLayoutManager(this)
     }
 }
