@@ -10,9 +10,6 @@ class StartActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start2)
-        var pref = getSharedPreferences("shared", MODE_PRIVATE)
-        Handler(Looper.getMainLooper()).postDelayed({
-            startActivity(Intent(this, LogInActivity))
-        }, 1000)
+
     }
 }
